@@ -1,18 +1,18 @@
-
+document.addEventListener('DOMContentLoaded', function () {
 var map = L.map('map');
 
 L.tileLayer("https://api.mapbox.com/styles/v1/mountainflamingo/cj00e1zbi009e2so5ufhigpz9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibW91bnRhaW5mbGFtaW5nbyIsImEiOiJjaXkyY2p3MTUwMDFwMndwZzBnYWRvdzhlIn0.Y8fngTE0aC0FlFcuSMd0mw").addTo(map);
 
 map.setView([40.14865222120236, -105.66738367080688], 16);
 var lakes = {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
           [
             [
               -105.6690788269043,
@@ -56,14 +56,14 @@ var lakes = {
             ]
           ]
         ]
-      }
+            }
     },
-    {
-      "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+        {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
           [
             [
               -105.66774845123291,
@@ -207,14 +207,14 @@ var lakes = {
             ]
           ]
         ]
-      }
+            }
     },
-    {
-      "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+        {
+            "type": "Feature",
+            "properties": {},
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
           [
             [
               -105.66804885864258,
@@ -250,8 +250,9 @@ var lakes = {
             ]
           ]
         ]
-      }
+            }
     }
   ]
 };
 L.geoJSON(lakes).addTo(map);
+});
